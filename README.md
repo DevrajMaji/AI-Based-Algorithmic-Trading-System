@@ -86,8 +86,3 @@ df.to_csv("stock_data.csv")
 └── README.md
 ```
 
-
-
-## ⚠️ Important Note on AUC
-
-The 0.47 ROC-AUC on **real stock data** is actually realistic — markets are near-efficient. Showing awareness of this in interviews signals maturity. Never inflate metrics with synthetic data in your demo.
