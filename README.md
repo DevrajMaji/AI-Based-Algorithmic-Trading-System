@@ -53,15 +53,6 @@ python trading_system/train.py
 streamlit run trading_system/app.py
 ```
 
----
-
-## 🌐 Deploy on Render
-
-1. Push to GitHub
-2. Create a new **Web Service** on Render
-3. Set **Build Command**: `pip install -r trading_system/requirements.txt`
-4. Set **Start Command**: `streamlit run trading_system/app.py --server.port $PORT --server.address 0.0.0.0`
-5. Upload `trading_model.pkl` (or add `train.py` to build command)
 
 **Note:** For real stock data, replace `stock_data.csv` with yfinance:
 ```python
@@ -70,7 +61,6 @@ df = yf.download("AAPL", start="2020-01-01", end="2024-12-31", auto_adjust=True)
 df.to_csv("stock_data.csv")
 ```
 
----
 
 ## 📂 File Structure
 
